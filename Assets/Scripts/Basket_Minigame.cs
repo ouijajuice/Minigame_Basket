@@ -25,12 +25,11 @@ public class Basket_Minigame : MonoBehaviour
     {
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
 
-        Vector3 camUp = Camera.main.transform.up;
         Vector3 camRight = Camera.main.transform.right;
-        camUp.z = 0f;
         camRight.z = 0f;
+        camRight.y = 0f;
 
-        Vector3 moveDirection = (camUp.normalized * moveInput.y + camRight.normalized * moveInput.x);
+        Vector3 moveDirection = (camRight.normalized * moveInput.x);
 
         characterController.Move(moveDirection * basketSpeed * Time.deltaTime);
     }

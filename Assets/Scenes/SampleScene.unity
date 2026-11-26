@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 347821eb2e417be448411e2c6e4e27e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basket_Minigame
-  basketSpeed: 3
+  basketSpeed: 5
   startCountdown: 5
   totalDrops: 10
   ingredientPrefabs: []
